@@ -140,12 +140,14 @@ header{
     grid-template-columns: repeat(3,1fr);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
+    margin-bottom: 50px;
+    /* background-color: green; */
 }
 .product{
     /* background-color: orange; */
     width: 329px;
     height: 476px;
-    overflow: hidden;
+    /* overflow: hidden; */
     background-color: white;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
@@ -160,7 +162,7 @@ header{
     margin: 20px;
 }
 .product_Title{
-    width: 150px;
+    width: 300px;
     font-weight: 500;
     font-size: 28px;
 }
@@ -180,8 +182,9 @@ header{
     font-weight: 700;
     font-size: 14px;
     line-height: 143%;
+    /* background-color: yellow; */
 }
-.Sea_More{
+.See_More{
     height: 30px;
     /* background-color: yellow; */
     text-align: right;
@@ -224,7 +227,7 @@ header{
 
 /* footer start */
 .footer{
-    margin-top: 50px;
+    margin-top: 40px;
     background-color: black;
     color: white;
     height: 200px;
@@ -252,3 +255,106 @@ header{
     margin-right: 30px;
 }
 /* footer end */
+
+
+/* Media Query start */
+
+/* For Mobile Display start */
+@media only screen and (max-width: 576px) {
+    .nav{
+        width: 100%;
+         flex-direction: column;
+       /* background-color: yellow; */
+    }
+    .nav ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    header{
+        width: 100%;
+        /* background-color: tomato; */
+    }
+    .Banner{
+        text-align: center;
+        flex-direction: column-reverse;
+    }
+    .Banner_Desc{
+        width: 100%;
+        text-align: center;
+    }
+    .Banner_Pic{
+        text-align: center;
+        width: 100%;
+    }
+    .mc{
+        width: 350px;
+        height: 414px;
+    }
+    .Banner_Pic{
+        background-size: 80%;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 60px;
+    }
+    .Reference{
+        width: 100%;
+        flex-wrap: wrap;
+        display: flex;
+    }
+    .main{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .Products{
+        width: 100%;
+        text-align: center;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .product{
+        width: 100%;
+    }
+    .Card_body{
+        text-align: left;
+    }
+
+    .Feature{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+}
+/* For Mobile Display End */
+
+/* For Tablet Media Query start */
+@media only screen and (min-width: 577px) and (max-width: 992px)  {
+    .header{
+        width: 100%;
+        margin: 0 20px;
+    }
+    nav{
+        margin-top: 30px;
+    }
+    .Banner{
+        width: 100%;
+       
+    }
+    .Reference{
+        width: 100%;
+        flex-wrap: wrap;
+        display: flex;
+    }
+    .main{
+        width: 100%;
+    }
+    .Products{
+        grid-template-columns: repeat(2,1fr);
+        grid-column-gap: 10px;
+        width: 100%;
+        padding: 50px;
+    }
+    .Feature{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+}
+/* For Tablet Media Query End */
+/* Media Query end */
